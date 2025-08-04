@@ -238,14 +238,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or need help:
 
-- 📧 Email: [your-email@example.com]
+- 📧 Email: [piyush.works.pro@gmail.com]
 - 🐛 Issues: [GitHub Issues](https://github.com/piyush-pb/ecom-dash/issues)
 - 📖 Documentation: [Wiki](https://github.com/piyush-pb/ecom-dash/wiki)
 
 ---
 
-**Made with ❤️ by [Your Name]**
+**Made with ❤️ by [Piyush Bisen]**
 
 [![GitHub stars](https://img.shields.io/github/stars/piyush-pb/ecom-dash?style=social)](https://github.com/piyush-pb/ecom-dash)
 [![GitHub forks](https://img.shields.io/github/forks/piyush-pb/ecom-dash?style=social)](https://github.com/piyush-pb/ecom-dash)
+
 [![GitHub issues](https://img.shields.io/github/issues/piyush-pb/ecom-dash)](https://github.com/piyush-pb/ecom-dash/issues) 

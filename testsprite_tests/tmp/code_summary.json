@@ -1,0 +1,98 @@
+{
+  "tech_stack": [
+    "TypeScript",
+    "React",
+    "Vite",
+    "Tailwind CSS",
+    "React Router DOM",
+    "Recharts",
+    "React Query",
+    "PostHog",
+    "Axios",
+    "React Hook Form",
+    "Zod",
+    "Framer Motion",
+    "React Table",
+    "React Select",
+    "React DatePicker",
+    "Lucide React",
+    "Date-fns"
+  ],
+  "features": [
+    {
+      "name": "Dashboard Analytics",
+      "description": "Main dashboard with real-time KPIs, charts, and performance metrics including sales data, customer analytics, and inventory status",
+      "files": ["src/pages/Dashboard.tsx", "src/components/Layout.tsx"]
+    },
+    {
+      "name": "Analytics Page",
+      "description": "Comprehensive analytics page with detailed charts, customer behavior tracking, and funnel analysis",
+      "files": ["src/pages/Analytics.tsx"]
+    },
+    {
+      "name": "Order Management",
+      "description": "Order tracking, search, filtering, and bulk status updates with order history and details",
+      "files": ["src/pages/Orders.tsx"]
+    },
+    {
+      "name": "Customer Management",
+      "description": "Customer profiles, segmentation, behavior analysis, and customer lifecycle management",
+      "files": ["src/pages/Customers.tsx"]
+    },
+    {
+      "name": "Inventory Management",
+      "description": "Stock tracking, low stock alerts, reorder recommendations, and inventory optimization",
+      "files": ["src/pages/Inventory.tsx"]
+    },
+    {
+      "name": "Settings & Configuration",
+      "description": "Application settings, user preferences, system configuration, and integration settings",
+      "files": ["src/pages/Settings.tsx"]
+    },
+    {
+      "name": "Layout & Navigation",
+      "description": "Main application layout with sidebar navigation, header, and responsive design",
+      "files": ["src/components/Layout.tsx"]
+    },
+    {
+      "name": "Notification System",
+      "description": "Real-time notifications, alerts, and notification center for system events",
+      "files": ["src/components/NotificationCenter.tsx"]
+    },
+    {
+      "name": "API Services",
+      "description": "Backend API integration for data fetching, CRUD operations, and real-time updates",
+      "files": ["src/services/api.ts"]
+    },
+    {
+      "name": "Analytics Tracking",
+      "description": "PostHog integration for user behavior tracking, event analytics, and funnel analysis",
+      "files": ["src/services/posthog.ts"]
+    },
+    {
+      "name": "Utility Functions",
+      "description": "Common utility functions for formatting, calculations, and data manipulation",
+      "files": ["src/utils/index.ts"]
+    },
+    {
+      "name": "Export Functionality",
+      "description": "Data export utilities for generating reports, Excel files, and data downloads",
+      "files": ["src/utils/exportUtils.ts"]
+    },
+    {
+      "name": "Type Definitions",
+      "description": "TypeScript type definitions for all data models, API responses, and component props",
+      "files": ["src/types/index.ts"]
+    },
+    {
+      "name": "Application Router",
+      "description": "Main application routing with React Router DOM and page view tracking",
+      "files": ["src/App.tsx", "src/main.tsx"]
+    },
+    {
+      "name": "Styling & UI",
+      "description": "Tailwind CSS styling, custom components, and responsive design system",
+      "files": ["src/App.css", "src/index.css", "tailwind.config.js", "postcss.config.js"]
+    }
+  ]
+} 

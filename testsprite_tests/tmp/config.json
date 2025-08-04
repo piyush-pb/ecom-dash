@@ -1,0 +1,16 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:5173",
+  "executionArgs": {
+    "projectName": "dasboardecom",
+    "projectPath": "c:/Users/piyus/dasboardecom",
+    "testIds": [],
+    "additionalInstruction": "Execute all test cases focusing on dashboard functionality, navigation, data visualization, and user interactions. Ensure comprehensive coverage of the e-commerce analytics features.",
+    "envs": {
+      "API_KEY": "sk-user-Z0hfV43141yNUCzxqWIWEPFm-SSdbUgBixAy-WDI0aLBOA3hatPSD2ZoaHaTSVTkocKz-oMtdU6p_OyBtetMyyZLXG86gU94HZtYCpd5CmBsE5kUp69ltp5wkBWaJkB8YgI"
+    }
+  },
+  "proxy": "http://bf8199ae-8193-4a62-98e8-88895b566384:fjOYL1GLb6ec6bjDpEhILnHdzuFntLc6@tun.testsprite.com:8080"
+}

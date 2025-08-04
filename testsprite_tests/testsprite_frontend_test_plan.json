@@ -1,0 +1,342 @@
+[
+  {
+    "id": "TC001",
+    "title": "Dashboard Widgets Load Performance",
+    "description": "Verify that all dashboard widgets load under 2 seconds with greater than 99.5% data accuracy.",
+    "category": "performance",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the real-time sales dashboard page after login."
+      },
+      {
+        "type": "assertion",
+        "description": "Measure and confirm that all widgets fully render within 2 seconds."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate displayed KPI data against API responses to ensure data accuracy is above 99.5%."
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Customer Event Tracking Completeness",
+    "description": "Check that customer event tracking captures over 99% of user interactions and updates segments automatically.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Simulate various user interactions such as clicks, page views, and form submissions on the dashboard and analytics pages."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm that PostHog event tracking logs the interactions at a capture rate exceeding 99%."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that customer segmentation on analytics page updates automatically based on captured events."
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Inventory Low Stock Alert Triggering",
+    "description": "Validate that low stock alerts trigger correctly based on configured reorder points and ABC categorization.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Reduce inventory levels of test products to below their reorder threshold."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that a low stock alert notification appears in the Inventory Management interface."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm that products are correctly categorized into ABC classes as per inventory rules."
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "Order Search and Bulk Update Operations",
+    "description": "Verify search functionality across orders, ability to filter with multiple criteria, and perform bulk status updates smoothly up to 100 orders.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Order Management page."
+      },
+      {
+        "type": "action",
+        "description": "Search orders using various filters including date ranges, order status, and customer names."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate that search results match the input criteria accurately."
+      },
+      {
+        "type": "action",
+        "description": "Select up to 100 orders from search results and perform a bulk status update."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm the bulk update completes without errors and statuses reflect the change."
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure email notifications trigger correctly for updated orders."
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "Financial Reporting and Forecasting Accuracy",
+    "description": "Test generation and accuracy of financial dashboards and forecasting models, including automated daily report creation and email distribution.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the financial reporting dashboard."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify that live data matches expected business data inputs with high accuracy."
+      },
+      {
+        "type": "action",
+        "description": "Generate and export detailed Excel financial reports."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate exported reports are accurate and well-formatted."
+      },
+      {
+        "type": "action",
+        "description": "Trigger forecast model update for budget planning."
+      },
+      {
+        "type": "assertion",
+        "description": "Check correctness of forecast values against historical data trends."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm that automated daily financial reports are generated and emailed successfully."
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "Customer Behavior Analytics and Segmentation",
+    "description": "Validate functionality of customer segmentation, funnel analysis, and cohort tracking features on the analytics page.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the Analytics page."
+      },
+      {
+        "type": "action",
+        "description": "Apply filters to segment customers by demographics, purchase behavior, and lifecycle stage."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm that the segmentation results update dynamically and accurately."
+      },
+      {
+        "type": "action",
+        "description": "Analyze behavior funnels including drop-off rates and conversion metrics."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify funnel visualizations display correct data and respond to filter changes."
+      },
+      {
+        "type": "action",
+        "description": "Review cohort tracking reports over defined periods."
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure cohort retention metrics and graphs are accurate and reflect expected user return patterns."
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Order Management - Customer Profile Integration",
+    "description": "Ensure order details display accurate linked customer profiles with search, filtering, and communication history accessible.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Access an order detail from the Orders page."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify associated customer profile details load correctly."
+      },
+      {
+        "type": "action",
+        "description": "Search orders by customer name or email."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm search results accurately reflect customer order associations."
+      },
+      {
+        "type": "action",
+        "description": "View customer's communication history linked to orders."
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure communication logs are accessible and correctly linked."
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Export Functionality for Dashboards and Reports",
+    "description": "Verify export capabilities for dashboards, inventory reports, and financial data generate correct downloadable files in expected formats.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to dashboard or report page with export option."
+      },
+      {
+        "type": "action",
+        "description": "Trigger export of data as Excel or CSV file."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm exported file downloads and opens without error."
+      },
+      {
+        "type": "assertion",
+        "description": "Validate exported data accuracy and format correctness compared to on-screen data."
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "User Authentication and Navigation Flow",
+    "description": "Verify secure login, logout, and navigation to main application pages with correct routing and UI responsiveness.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open application and navigate to login page."
+      },
+      {
+        "type": "action",
+        "description": "Submit valid user credentials."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm successful login and redirect to Dashboard page."
+      },
+      {
+        "type": "action",
+        "description": "Navigate sequentially to Analytics, Orders, Inventory, Customers, and Settings pages using sidebar navigation."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify each page loads correctly without errors and UI adapts responsively."
+      },
+      {
+        "type": "action",
+        "description": "Perform logout action."
+      },
+      {
+        "type": "assertion",
+        "description": "Ensure user is redirected to login page and session is cleared."
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Notification System Real-Time Alerts",
+    "description": "Validate real-time notifications and alerts appear correctly for events such as low stock, order updates, and system messages in the notification center.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Trigger events like low stock in inventory and bulk order status updates."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm notifications appear immediately in the Notification Center component."
+      },
+      {
+        "type": "action",
+        "description": "Open Notification Center and review alert details."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify alerts provide accurate information and clear correctly after user dismissal."
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "Error Handling on Invalid Data Inputs",
+    "description": "Test system validation and error handling on invalid inputs across key forms including order search, inventory adjustments, and financial forecast updates.",
+    "category": "error handling",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Enter invalid date formats, strings in numeric fields, or empty required fields in order search and inventory forms."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify form validation prevents submission and displays meaningful error messages."
+      },
+      {
+        "type": "action",
+        "description": "Submit financial forecast update with out-of-range or malformed data."
+      },
+      {
+        "type": "assertion",
+        "description": "Check system gracefully handles errors and provides clear user feedback without crashing."
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "Scalability Under Load",
+    "description": "Assess system performance and responsiveness when handling large datasets, such as 10,000+ customer records and orders.",
+    "category": "performance",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load pages with large amounts of data in orders, customers, and inventory."
+      },
+      {
+        "type": "assertion",
+        "description": "Verify UI responsiveness remains acceptable and no crashes occur."
+      },
+      {
+        "type": "action",
+        "description": "Perform bulk operations and exports on large datasets."
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm operations complete successfully with reasonable response time."
+      }
+    ]
+  }
+]
